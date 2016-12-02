@@ -10,3 +10,11 @@ session = DBSession()
 
 #Lets Create!
 
+myfirstRestaurant = Restaurant(name="Valentins CAFE")
+session.add(myfirstRestaurant)
+session.commit()
+
+cheesepizza=MenuItem(name="PIZZA Extreme", description="Diese Pizza haut dich um", course="Entree", price="22 EUR", restaurant= myfirstRestaurant)
+session.add(cheesepizza)
+session.commit()
+print session.query(MenuItem).all()
