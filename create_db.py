@@ -12,7 +12,6 @@ _project_ = "vscsqltests"
 import sys #provides runtime env access
 
 
-
 from sqlalchemy import ForeignKey,Column, Integer,String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
