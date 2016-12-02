@@ -9,5 +9,3 @@ session = DBSession()
 
 firstResult= session.query(Restaurant).first()
 print firstResult.name
-
-mItems=
