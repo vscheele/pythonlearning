@@ -17,4 +17,5 @@ session.commit()
 cheesepizza=MenuItem(name="PIZZA Extreme", description="Diese Pizza haut dich um", course="Entree", price="22 EUR", restaurant= myfirstRestaurant)
 session.add(cheesepizza)
 session.commit()
-print session.query(MenuItem).all()
+allItems= session.query(MenuItem).all()
+print "hey"
