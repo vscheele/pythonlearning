@@ -6,6 +6,3 @@ engine = create_engine('sqlite:///restaurantmenu.db')
 Base.metadata.bind = engine
 DBSession=sessionmaker(bind=engine)
 session = DBSession()
-
-firstResult= session.query(Restaurant).first()
-print firstResult.name
