@@ -51,6 +51,7 @@ class Puppy(Base):
 
 ### at end of file  ########################################################
 engine = create_engine('sqlite:///puppyshelter.db')
+Base.metadata.drop_all(bind=engine)
 Base.metadata.create_all(engine)
 
 DBSession=sessionmaker(bind=engine)
