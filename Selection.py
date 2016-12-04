@@ -6,3 +6,4 @@ engine = create_engine('sqlite:///restaurantmenu.db')
 Base.metadata.bind = engine
 DBSession=sessionmaker(bind=engine)
 session = DBSession()
+
