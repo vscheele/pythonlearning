@@ -30,6 +30,8 @@ class webserverHandler(BaseHTTPRequestHandler):
                 self.wfile.write(output)
                 print output
                 return
+
+
         except IOError:
             self.send_error(404,"File not Found %s" % self.path)
     def do_POST(self):
